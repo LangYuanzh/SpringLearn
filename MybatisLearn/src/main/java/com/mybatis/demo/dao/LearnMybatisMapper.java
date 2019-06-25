@@ -1,6 +1,8 @@
 package com.mybatis.demo.dao;
 
 import com.mybatis.demo.mapper.LearnMybatis;
+import com.mybatis.demo.mapper.LearnMybatisExample;
+import org.apache.ibatis.annotations.Param;
 
 public interface LearnMybatisMapper {
     int deleteByPrimaryKey(Integer id);
@@ -10,6 +12,10 @@ public interface LearnMybatisMapper {
     int insertSelective(LearnMybatis record);
 
     LearnMybatis selectByPrimaryKey(Integer id);
+
+    int updateByExampleSelective(@Param("record") LearnMybatis record, @Param("example") LearnMybatisExample example);
+
+    int updateByExample(@Param("record") LearnMybatis record, @Param("example") LearnMybatisExample example);
 
     int updateByPrimaryKeySelective(LearnMybatis record);
 
