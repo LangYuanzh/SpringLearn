@@ -21,11 +21,12 @@
                             targetProject="F:\ZhangGit\MybatisLearn\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
+
         </javaModelGenerator>
         <!-- mapper文件生成路劲和包名 -->
         <sqlMapGenerator targetPackage="com.mybatis.demo.mapper"
                          targetProject="F:\ZhangGit\MybatisLearn\src\main\java">
-            <property name="enableSubPackages" value="true"/>
+            <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
         <!-- dao层接口文件 -->
         <javaClientGenerator targetPackage="com.mybatis.demo.dao"
