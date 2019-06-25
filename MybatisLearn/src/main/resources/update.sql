@@ -1,0 +1,1 @@
+alter table learn_mybatis add adddate date;
