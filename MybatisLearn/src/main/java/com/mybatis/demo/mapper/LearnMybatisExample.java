@@ -45,7 +45,7 @@ public class LearnMybatisExample {
         oredCriteria.add(criteria);
         return criteria;
     }
-    
+
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
         if (oredCriteria.size() == 0) {
