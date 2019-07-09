@@ -2,8 +2,10 @@ package com.mybatis.demo.dao;
 
 import com.mybatis.demo.mapper.LearnMybatis;
 import com.mybatis.demo.mapper.LearnMybatisExample;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+@Mapper
 public interface LearnMybatisMapper {
     int deleteByPrimaryKey(Integer id);
 
