@@ -39,7 +39,6 @@ public class HelloController {
     @ResponseBody
     public HelloModel post(HelloModel helloModel){
         System.out.println(helloModel.getId()+helloModel.getText()+helloModel.getTitle());
-
         helloService.insert(helloModel);
         return helloModel;
     }

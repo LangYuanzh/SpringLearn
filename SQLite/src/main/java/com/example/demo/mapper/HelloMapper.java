@@ -11,8 +11,7 @@ import java.util.List;
 public interface HelloMapper {
 
     // 插入 并查询id 赋给传入的对象
-    @Insert("INSERT INTO hello VALUES(#{key}, #{value})")
-    @SelectKey(statement = "SELECT seq id FROM sqlite_sequence WHERE (name = 'hello')", before = false, keyProperty = "id", resultType = int.class)
+    @Insert("INSERT INTO hello VALUES(#{Id}, #{Title},#{Text})")
     int insert(HelloModel model);
 
     // 根据 ID 查询
